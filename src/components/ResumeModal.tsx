@@ -133,7 +133,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     <MapPin className="w-3.5 h-3.5 text-slate-400" />
                   </div>
                   <div className="flex items-center gap-2 md:justify-end">
-                    <span className="underline">linkedin.com/in/khairatin-nadzirah</span>
+                    <span className="underline">linkedin.com/in/khairatin-nazirah</span>
                     <Linkedin className="w-3.5 h-3.5 text-slate-400" />
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               <h2 className="text-sm font-bold uppercase tracking-wider text-slate-900 border-b border-slate-300 pb-1.5 mb-2.5 font-display flex items-center gap-2">
                 <FileText className="w-4 h-4 text-slate-700" /> Profil Profesional
               </h2>
-              <p className="text-slate-700 leading-relaxed text-[13px]">
+              <p className="text-slate-700 leading-relaxed text-[13px] whitespace-pre-line">
                 {portfolioData.about}
               </p>
             </div>
@@ -255,7 +255,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     <div key={idx} className="text-xs">
                       <h4 className="font-bold text-slate-900">{edu.degree}</h4>
                       <p className="text-slate-700 font-medium">{edu.institution}</p>
-                      <p className="text-slate-500 font-mono text-[10px] my-0.5">{edu.period} | IPK: {edu.gpa}</p>
+                      <p className="text-slate-500 font-mono text-[10px] my-0.5">{edu.period}</p>
                       <p className="text-slate-600 text-[11px] mt-1">{edu.details}</p>
                     </div>
                   ))}
@@ -279,7 +279,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
 
             {/* Footer Sign-off (Professional touch) */}
             <div className="mt-8 pt-4 border-t border-slate-200 text-center text-[10px] text-slate-400 italic">
-              Dokumen ini dihasilkan secara digital dari Portfolio Online Khairatin Nadzirah.
+              Dokumen ini dihasilkan secara digital dari Portfolio Online {portfolioData.name}.
             </div>
           </div>
         </div>
@@ -287,7 +287,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         {/* Modal Footer (Screen-only, helper warning) */}
         <div className="bg-slate-50 border-t border-slate-200 px-6 py-3.5 text-center text-xs text-slate-500 flex justify-between items-center flex-wrap gap-2 sticky bottom-0">
           <span>💡 <strong>Tips:</strong> Klik "Cetak / PDF" lalu pilih opsi <strong>"Save as PDF"</strong> pada tujuan pencetak untuk menyimpan CV secara lokal.</span>
-          <span className="font-mono text-[11px]">S.AB / Admin & Operations</span>
+          <span className="font-mono text-[11px]">S.Pd / Teacher & Admin Support</span>
         </div>
       </motion.div>
     </div>

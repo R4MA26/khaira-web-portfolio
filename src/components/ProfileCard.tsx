@@ -31,17 +31,16 @@ export default function ProfileCard({ copiedText, onCopy }: ProfileCardProps) {
                 {portfolioData.name}
               </h1>
               <p className="text-xs text-slate-400 font-medium font-mono uppercase tracking-wider mt-1">
-                ADMIN & OPERATIONS
+                TEACHER & ADMIN SUPPORT
               </p>
             </div>
           </div>
 
-          <h2 className="text-2xl font-light leading-tight mb-4 text-slate-900">
-            Administrative <br />
-            <span className="font-bold">Operations Specialist</span>
+          <h2 className="text-xl sm:text-2xl font-bold leading-tight mb-4 text-slate-900">
+            {portfolioData.title}
           </h2>
 
-          <p className="text-slate-500 leading-relaxed text-sm mb-6">
+          <p className="text-slate-500 leading-relaxed text-sm mb-6 whitespace-pre-line">
             {portfolioData.about}
           </p>
 
@@ -88,7 +87,7 @@ export default function ProfileCard({ copiedText, onCopy }: ProfileCardProps) {
                 <Linkedin className="w-4 h-4 text-slate-400 shrink-0" />
                 <div>
                   <p className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">LinkedIn</p>
-                  <p className="text-xs text-slate-700">khairatin-nadzirah</p>
+                  <p className="text-xs text-slate-700">khairatin-nazirah</p>
                 </div>
               </div>
               <span className="text-[10px] font-bold text-slate-400 hover:text-slate-900">Open</span>
@@ -97,19 +96,19 @@ export default function ProfileCard({ copiedText, onCopy }: ProfileCardProps) {
         </div>
 
         <div className="space-y-4 mt-8 pt-6 border-t border-slate-100">
-          <p className="text-xs uppercase tracking-widest text-slate-400 font-bold">Komitmen Kinerja</p>
+          <p className="text-xs uppercase tracking-widest text-slate-400 font-bold">Kualifikasi Utama</p>
           <div className="grid grid-cols-3 gap-2 text-center text-xs">
             <div className="p-2 bg-slate-50 rounded-sm border border-slate-100">
-              <span className="block font-bold text-slate-900">5+ Thn</span>
+              <span className="block font-bold text-slate-900">3 Thn</span>
               <span className="text-[9px] text-slate-400">Pengalaman</span>
             </div>
             <div className="p-2 bg-slate-50 rounded-sm border border-slate-100">
-              <span className="block font-bold text-slate-900">100%</span>
-              <span className="text-[9px] text-slate-400">Akurasi</span>
+              <span className="block font-bold text-slate-900">S1 S.Pd.</span>
+              <span className="text-[9px] text-slate-400">UNIMED</span>
             </div>
             <div className="p-2 bg-slate-50 rounded-sm border border-slate-100">
-              <span className="block font-bold text-slate-900">30%</span>
-              <span className="text-[9px] text-slate-400">Efisiensi</span>
+              <span className="block font-bold text-slate-900">A1</span>
+              <span className="text-[9px] text-slate-400">Bahasa Jerman</span>
             </div>
           </div>
         </div>

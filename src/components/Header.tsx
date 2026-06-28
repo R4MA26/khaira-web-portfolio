@@ -1,4 +1,5 @@
 import React from "react";
+import { portfolioData } from "../data";
 
 interface HeaderProps {
   onOpenResume: () => void;
@@ -13,7 +14,7 @@ export default function Header({ onOpenResume }: HeaderProps) {
             <span className="text-white font-bold text-xs">KN</span>
           </div>
           <span className="font-display font-semibold tracking-tight text-lg text-slate-900">
-            Khairatin Nadzirah
+            {portfolioData.name}
           </span>
         </div>
 
