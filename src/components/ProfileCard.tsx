@@ -2,7 +2,8 @@ import React from "react";
 import { Check, Mail, Phone, Linkedin } from "lucide-react";
 import { portfolioData } from "../data";
 // @ts-ignore
-import avatarImage from "../assets/images/professional_admin_avatar_1782571563538.jpg";
+import avatarImage from "../assets/images/khaira.jpg";
+
 
 interface ProfileCardProps {
   copiedText: string;

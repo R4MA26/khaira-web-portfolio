@@ -6,6 +6,8 @@
 import { motion } from "motion/react";
 import { X, Printer, Download, Mail, Phone, MapPin, Linkedin, Award, BookOpen, Briefcase, FileText } from "lucide-react";
 import { portfolioData } from "../data";
+// @ts-ignore
+import cvPdf from "../assets/download/cv-khairatin-nazirah.pdf";
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -82,6 +84,14 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
           </div>
 
           <div className="flex items-center gap-2">
+            <a
+              href={cvPdf}
+              download="CV Khairatin Nazirah.pdf"
+              className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-sm font-semibold transition-all shadow-sm cursor-pointer"
+            >
+              <Download className="w-4 h-4" />
+              <span>Unduh PDF</span>
+            </a>
             <button
               onClick={handlePrint}
               className="flex items-center gap-2 px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-sm font-semibold transition-all shadow-sm cursor-pointer"
